@@ -6,7 +6,7 @@ metadata:
 spec:
   project: default
   source:
-    repoURL: https://github.com/pmelo1981/UnisabanaArq1Grupo2PatronesActividad3-productapi
+    repoURL: https://github.com/pmelo1981/UnisabanaDevOps-ProductApi
     path: helm
     targetRevision: main
     helm:
