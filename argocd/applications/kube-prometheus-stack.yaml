@@ -17,22 +17,6 @@ spec:
           adminPassword: admin123
           service:
             type: LoadBalancer
-          additionalDataSources:
-            - name: Prometheus
-              type: prometheus
-              access: proxy
-              url: http://kube-prometheus-stack-prometheus.monitoring.svc.cluster.local:9090
-              isDefault: true
-              editable: true
-              jsonData:
-                manageAlerts: true
-                alertmanagerUid: alertmanager
-            - name: Alertmanager
-              uid: alertmanager
-              type: alertmanager
-              access: proxy
-              url: http://kube-prometheus-stack-alertmanager.monitoring.svc.cluster.local:9093
-              editable: true
           sidecar:
             dashboards:
               enabled: true
